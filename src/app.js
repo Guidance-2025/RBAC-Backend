@@ -22,7 +22,7 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // Handle OPTIONS preflight requests
-app.options('*', cors(corsOptions));
+app.options('*', cors(corsOptions)); 
 
 // Routes
 app.use('/api/auth', authRoutes);
